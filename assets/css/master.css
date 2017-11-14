@@ -22,7 +22,11 @@ video#bgvid {
 #section6{
   min-height: 900px;
   background-color: #161415;
-
+}
+#boot {
+  margin: 20px;
+  width: 200px;
+  height: 100px;
 }
 
 a.top {
@@ -33,10 +37,6 @@ a.top {
 }
 .separator{
   clear: both;
-}
-
-.progress-bar{
-  background-color: #66db19;
 }
 /* Effet de survol */
 figure.effect-sadie figcaption::before{
