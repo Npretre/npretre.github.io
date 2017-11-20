@@ -16,6 +16,18 @@
   <link rel="stylesheet" href="assets/css/master.css">
   <link rel="stylesheet" href="assets/libs/percicle/percircle.css">
   <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600,800,900" rel="stylesheet" type="text/css">
+  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+  <script>
+  (function(){
+    var config = {
+      viewFactor : 0.15,
+      duration   : 800,
+      distance   : "0px",
+      scale      : 0.8,
+    }
+    window.sr = new ScrollReveal(config)
+  })()
+  </script>
 </head>
 
 <body>
@@ -23,7 +35,7 @@
   <div class="container-fluid">
 
     <!-- Static navbar -->
-    <nav class="navbar navbar-inverse navbar-fixed-top navbar-default">
+    <nav class="navbar navbar-inverse navbar-default">
       <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -132,9 +144,9 @@
         </div>
         <div class="row">
           <div class="col-lg-2 col-lg-offset-3">
-            <span data-toggle="modal" data-target="#modal-html"><a data-toggle="tooltip" data-placement="left" title="" data-original-title="Tooltip on left"><div class="skills-items">
-              HTML
-            </div></a></span>
+            <a data-toggle="modal" data-target="#modal-html"><div class="skills-items">
+              HTML / CSS
+            </div></a>
             <div class="modal fade bs-example-modal-lg" id="modal-html" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
               <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
@@ -150,9 +162,9 @@
           </div>
           <div class="col-lg-2">
             <a data-toggle="modal" data-target="#modal-php"><div class="skills-items">
-              CSS 3
+              PHP
             </div></a>
-            <div class="modal fade bs-example-modal-lg" id="modal-css" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+            <div class="modal fade bs-example-modal-lg" id="modal-php" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
               <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
                   <div class="modal-header">
@@ -182,9 +194,7 @@
               </div>
             </div>
           </div>
-        </div>
-    <div class="row">
-              <div class="col-lg-2 col-lg-offset-3">
+          <div class="col-lg-2">
             <a data-toggle="modal" data-target="#modal-sql"><div class="skills-items">
               MySQL
             </div></a>
@@ -201,24 +211,8 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-2">
-            <a data-toggle="modal" data-target="#modal-js"><div class="skills-items">
-              PHP
-            </div></a>
-            <div class="modal fade bs-example-modal-lg" id="modal-php" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-              <div class="modal-dialog modal-lg" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                  </div>
-                  <div class="modal-body">
-                    HTML SA MERE
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          </div>
+        </div>
+
         <h2>Framework / Librairies</h2>
         <div class="row">
           <div class="col-lg-2 col-lg-offset-3">
@@ -533,12 +527,12 @@
 
       <section class="visible-sm visible-xs ">
         <div class="col-lg-12 timeband">
-          <time>2017</time>
-          <p>Projet d'Ecommerce</p>
+          <time>2017/2018</time>
+          <p>Apprenant a E2N</p>
         </div>
         <div class="col-lg-12 timeband">
           <time>2017</time>
-          <p></p>
+          <p>Survécu à la piscine de 42</p>
         </div>
         <div class="col-lg-12 timeband">
           <time>2015/2017</time>
@@ -597,70 +591,105 @@
                     <h2>Tennis</h2>
                     <p class="description">Frappes face au vent.</p>
                   </figcaption>
-                </figure></div>
-              </div>
-              <div class="col-lg-2 col-md-4 col-sm-4 col-xs-11 ">
-                <div class="grid">
-                  <figure class="effect-sadie">
-                    <img src="assets/img/voyages.jpg" alt="img25"/>
-                    <figcaption>
-                      <h2>Voyages</h2>
-                      <p class="description">Should I stay or should I go ?</p>
-                    </figcaption>
-                  </figure></div>
-                </div>
-                <div class="col-lg-2 col-md-6 col-sm-6 col-xs-11">
+                </figure></div></div>
+                <div class="col-lg-2 col-md-4 col-sm-4 col-xs-11 ">
                   <div class="grid">
                     <figure class="effect-sadie">
-                      <img src="assets/img/street.jpg" alt="img25"/>
+                      <img src="assets/img/voyages.jpg" alt="img25"/>
                       <figcaption>
-                        <h2>Street Art</h2>
-                        <p class="description">Le monde est un vaste terrain de jeu.</p>
+                        <h2>Voyages</h2>
+                        <p class="description">Should I stay or should I go ?</p>
                       </figcaption>
-                    </figure></div>
-                  </div>
-                  <div class="col-lg-2 col-md-6 col-sm-6 col-xs-11">
-                    <div class="grid">
-                      <figure class="effect-sadie">
-                        <img src="assets/img/musique-mini.jpg" alt="img25"/>
-                        <figcaption>
-                          <h2>Jeux Vidéos</h2>
-                          <p class="description">Let's play a game.</p>
-                        </figcaption>
-                      </figure></div>
-                    </div>
-                  </div>
-                  <div class="separator"></div>
-                </section>
+                    </figure></div></div>
+                    <div class="col-lg-2 col-md-6 col-sm-6 col-xs-11">
+                      <div class="grid">
+                        <figure class="effect-sadie">
+                          <img src="assets/img/street.jpg" alt="img25"/>
+                          <figcaption>
+                            <h2>Street Art</h2>
+                            <p class="description">Le monde est un vaste terrain de jeu.</p>
+                          </figcaption>
+                        </figure></div></div>
+                        <div class="col-lg-2 col-md-6 col-sm-6 col-xs-11">
+                          <div class="grid">
+                            <figure class="effect-sadie">
+                              <img src="assets/img/musique-mini.jpg" alt="img25"/>
+                              <figcaption>
+                                <h2>Jeux Vidéos</h2>
+                                <p class="description">Let's play a game.</p>
+                              </figcaption>
+                            </figure></div></div>
+                            <div class="separator"></div>
+                          </section>
 
-                <!-- Bootstrap core JavaScript
-                ================================================== -->
-                <!-- Placed at the end of the document so the pages load faster -->
-                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-                <script src="assets/js/bootstrap.min.js"></script>
-                <a href="#haut" class="top"><i class="fa fa-caret-up fa-4x" aria-hidden="true"></i></a>
-                <script>function isElementInViewport(el) {
-                  var rect = el.getBoundingClientRect();
-                  return (
-                    rect.top >= 0 &&
-                    rect.left >= 0 &&
-                    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-                    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-                  );
-                }</script>
-                <script>var items = document.querySelectorAll(".timeline li");
 
-                // code for the isElementInViewport function
 
-                function callbackFunc() {
-                  for (var i = 0; i < items.length; i++) {
-                    if (isElementInViewport(items[i])) {
-                      items[i].classList.add("in-view");
-                    }
-                  }
-                }
+                          <!-- Bootstrap core JavaScript
+                          ================================================== -->
+                          <!-- Placed at the end of the document so the pages load faster -->
+                          <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+                          <script src="assets/js/bootstrap.min.js"></script>
 
-                window.addEventListener("load", callbackFunc);
-                window.addEventListener("scroll", callbackFunc);</script>
-              </body>
-              </html>
+                          <script>function isElementInViewport(el) {
+                            var rect = el.getBoundingClientRect();
+                            return (
+                              rect.top >= 0 &&
+                              rect.left >= 0 &&
+                              rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                              rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+                            );
+                          }</script>
+                          <script>var items = document.querySelectorAll(".timeline li");
+
+                          // code for the isElementInViewport function
+
+                          function callbackFunc() {
+                            for (var i = 0; i < items.length; i++) {
+                              if (isElementInViewport(items[i])) {
+                                items[i].classList.add("in-view");
+                              }
+                            }
+                          }
+
+                          window.addEventListener("load", callbackFunc);
+                          window.addEventListener("scroll", callbackFunc);</script>
+                          <script>
+                          var skills = {
+                            origin   : "left",
+                            distance : "600px",
+                            duration : 1000,
+                            scale    : 1.05,
+                          }
+                          var skillbar = {
+                            origin   : "right",
+                            distance : "800px",
+                            duration : 1000,
+                            delay    : 500,
+                            scale    : 1.05,
+                          }
+                          var prez = {
+                            origin   : "top",
+                            distance : "800px",
+                            duration : 500,
+                            delay    : 500,
+                            scale    : 1.05,
+                          }
+                          sr.reveal(".skills", skills)
+                          sr.reveal(".skillbar", skillbar)
+                          sr.reveal(".prez", prez)
+                          </script>
+                          <script>
+                          $(function(){
+                            var $ppc = $('.progress-pie-chart'),
+                            percent = parseInt($ppc.data('percent')),
+                            deg = 360*percent/100;
+                            if (percent > 50) {
+                              $ppc.addClass('gt-50');
+                            }
+                            $('.ppc-progress-fill').css('transform','rotate('+ deg +'deg)');
+                            $('.ppc-percents span').html(percent+'%');
+                          });
+                          </script>
+                          <a href="#haut" class="top"><i class="fa fa-caret-up fa-4x" aria-hidden="true"></i></a>
+                        </body>
+                        </html>

@@ -243,3 +243,30 @@ figure.effect-sadie:hover figcaption::before,figure.effect-sadie:hover p{
 .timeband{
   list-style-type: none;
 }
+
+/* COmpétences */
+
+.skills-items{
+  display:inline-block;
+  padding:12px;
+  /* height:44px; */
+  width:100%;
+  vertical-align:top;
+  background:#444444;
+  box-shadow:1px 1px 1px 0px rgba(0,0,0,.2);
+  color:#FFFFFF;
+  margin-bottom:24px;
+  margin-right:3%;
+  border-radius:2px;
+  cursor:pointer;
+  border-left:4px solid #444444;
+  transition:all 250ms ease-in-out;
+}
+.skills-items:hover{
+  border-left:4px solid #19e7da;
+  transition:all 250ms ease-in-out;
+}
+
+#section6 h2{
+  text-align: center;
+}
