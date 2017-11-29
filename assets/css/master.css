@@ -29,6 +29,17 @@ video#bgvid {
   height: 100px;
 }
 
+.navbar{
+  background: #006ba8;
+}
+.navbar-inverse .navbar-brand:hover,
+.navbar-inverse .navbar-brand:focus,
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus{
+  background-color: white;
+  color: #1ed1d1;
+}
+
 a.top {
    position:fixed;
    top : 90%;
