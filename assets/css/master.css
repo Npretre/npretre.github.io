@@ -10,24 +10,114 @@ video#bgvid {
   margin-top: 900px;
   background-color: #161415;
 }
-#section3{
+#section7{
   min-height: 900px;
   background-color: #161415;
   padding-left: 15%;
+  padding-top: 5%;
 }
-#section4{
+#section5{
   min-height: 900px;
   background-color: #161415;
 }
-#section6{
+#section3{
   min-height: 900px;
   background-color: #161415;
 }
-#boot {
-  margin: 20px;
-  width: 200px;
-  height: 100px;
+
+.container-fluid{
+  padding: 0px;
 }
+
+section{
+  width: 100%;
+}
+
+/* Bob */
+
+@-webkit-keyframes hvr-icon-bob {
+  0% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+  }
+  50% {
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
+  }
+  100% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+  }
+}
+@keyframes hvr-icon-bob {
+  0% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+  }
+  50% {
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
+  }
+  100% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+  }
+}
+@-webkit-keyframes hvr-icon-bob-float {
+  100% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+  }
+}
+@keyframes hvr-icon-bob-float {
+  100% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+  }
+}
+.hvr-icon-bob {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  padding-right: 2.2em;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.5s;
+}
+.hvr-icon-bob:before {
+  content: "\f077";
+  position: absolute;
+  right: 1em;
+  padding: 0 1px;
+  font-family: FontAwesome;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+.hvr-icon-bob:hover:before, .hvr-icon-bob:focus:before, .hvr-icon-bob:active:before {
+  -webkit-animation-name: hvr-icon-bob-float, hvr-icon-bob;
+  animation-name: hvr-icon-bob-float, hvr-icon-bob;
+  -webkit-animation-duration: .3s, 1.5s;
+  animation-duration: .3s, 1.5s;
+  -webkit-animation-delay: 0s, .3s;
+  animation-delay: 0s, .3s;
+  -webkit-animation-timing-function: ease-out, ease-in-out;
+  animation-timing-function: ease-out, ease-in-out;
+  -webkit-animation-iteration-count: 1, infinite;
+  animation-iteration-count: 1, infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-direction: normal, alternate;
+  animation-direction: normal, alternate;
+}
+
+.hvr-icon-bob:hover{
+
+  color: #3cf4d2;
+}
+
+
 
 .navbar{
   background: #006ba8;
@@ -186,7 +276,7 @@ figure.effect-sadie:hover figcaption::before,figure.effect-sadie:hover p{
   bottom: 0;
   width: 400px;
   padding: 15px;
-  background: #396c15;
+  background: #44aaaa;
 }
 
 .timeline ul li div::before {
@@ -204,16 +294,16 @@ figure.effect-sadie:hover figcaption::before,figure.effect-sadie:hover p{
 .timeline ul li:nth-child(odd) div::before {
   left: -15px;
   border-width: 8px 16px 8px 0;
-  border-color: transparent #396c15 transparent transparent;
+  border-color: transparent #44aaaa transparent transparent;
 }
 .timeline ul li:nth-child(even) div {
-  left: -468px;
+  left: -440px;
 }
 
 .timeline ul li:nth-child(even) div::before {
   right: -15px;
   border-width: 8px 0 8px 16px;
-  border-color: transparent transparent transparent #396c15;
+  border-color: transparent transparent transparent #44aaaa;
 }
 .timeline ul li::after {
   background: #fff;
@@ -278,6 +368,6 @@ figure.effect-sadie:hover figcaption::before,figure.effect-sadie:hover p{
   transition:all 250ms ease-in-out;
 }
 
-#section6 h2{
+#section5 h2{
   text-align: center;
 }
