@@ -333,14 +333,20 @@ figure.effect-sadie:hover figcaption::before,figure.effect-sadie:hover p{
   visibility: visible;
   opacity: 1;
 }
+.timeline a{
+  color: white;
+  text-decoration: none;
+}
 
 /*Timeline sm et xs */
 
 .timeband{
-  background-color: #396c15;
+  background-color: #44aaaa;
   padding: 15px;
 }
-
+.timeband a{
+  color: white;
+}
 .timeband{
   list-style-type: none;
 }
@@ -367,7 +373,26 @@ figure.effect-sadie:hover figcaption::before,figure.effect-sadie:hover p{
   border-left:4px solid #19e7da;
   transition:all 250ms ease-in-out;
 }
-
 #section5 h2{
   text-align: center;
+}
+.modal-content{
+  background: white;
+  border-radius: 0px;
+  color: black;
+}
+.close{
+  color: black;
+}
+.modal-header h3{
+  font-family: 'Montserrat';
+  font-weight: bolder;
+}
+.modal-body p{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.cadre{
+  border: solid 2px white;
+  min-height: 500px;
 }
