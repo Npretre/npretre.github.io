@@ -15,12 +15,12 @@
   <link href="assets/css/bootstrap.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/master.css">
   <link rel="stylesheet" href="assets/css/contactform.css">
+  <script src="https://use.fontawesome.com/7bc8428a61.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600,800,900" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Anton|Lobster" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 </head>
-
 <body>
-
   <div class="container">
 
     <!-- Static navbar -->
@@ -76,11 +76,19 @@
 
     <section id="section2">
       <div class="row">
-        <div class="col-lg-2 col-lg-offset-2 cadre">
+        <div class="col-lg-3 col-lg-offset-1">
+          <div class="cadrephoto">
 
+          </div>
         </div>
-        <div class="col-lg-5 col-lg-offset-1 cadre">
-
+        <div class="col-lg-6 col-lg-offset-1 cadre">
+          <h3></h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 col-lg-offset-3 grade">
+          <h1><span class="web">Web</span> Developer</h1>
+          <h1 class="junior">Junior</h1>
         </div>
       </div>
     </section>
@@ -183,7 +191,8 @@
                   <h3>CSS 3</h3>
                 </div>
                 <div class="modal-body">
-
+                  <p>Le CSS est le maquillage du Web, sans lui tout se ressemblerai sans aucune âme. Cela permet d'afficher des idées, sa philosophie.</p>
+                  <p>Le CSS est la poudre aux yeux mais reste cependant très important, il permet de diférencier un bon site d'un site parfait.</p>
                 </div>
               </div>
             </div>
@@ -687,7 +696,7 @@
             <!-- Placed at the end of the document so the pages load faster -->
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
             <script src="assets/js/bootstrap.min.js"></script>
-            <a href="#haut" class="top"><i class="fa fa-caret-up fa-4x" aria-hidden="true"></i></a>
+            <a href="#" class="scrollToTop"><i class="fa fa-caret-up fa-4x" aria-hidden="true"></i></a>
             <script>
             //Code de la Timeline
             function isElementInViewport(el) {
@@ -714,6 +723,26 @@
 
             window.addEventListener("load", callbackFunc);
             window.addEventListener("scroll", callbackFunc);
+            </script>
+            <script>
+                $(document).ready(function(){
+
+                    //Check to see if the window is top if not then display button
+                    $(window).scroll(function(){
+                        if ($(this).scrollTop() > 100) {
+                            $('.scrollToTop').fadeIn();
+                        } else {
+                            $('.scrollToTop').fadeOut();
+                        }
+                    });
+
+                    //Click event to scroll to top
+                    $('.scrollToTop').click(function(){
+                        $('html, body').animate({scrollTop : 0},800);
+                        return false;
+                    });
+
+                });
             </script>
           </body>
           </html>
