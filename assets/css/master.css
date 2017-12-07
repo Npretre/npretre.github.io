@@ -6,7 +6,7 @@ video#bgvid {
 
 }
 #section2{
-  height: 900px;
+  min-height: 900px;
   margin-top: 900px;
   background-color: #161415;
   padding-top: 20px;
@@ -128,8 +128,8 @@ section{
 .navbar-inverse .navbar-brand:focus,
 .navbar-inverse .navbar-nav > li > a:hover,
 .navbar-inverse .navbar-nav > li > a:focus{
-  background-color: white;
-  color: #1ed1d1;
+  background-color: #024c77;
+  color: white;
 }
 
 .scrollToTop {
@@ -283,9 +283,6 @@ figure.effect-sadie:hover figcaption::before,figure.effect-sadie:hover p{
   padding: 15px;
   background: #44aaaa;
 }
-.timeline ul li div:hover{
-  background: red;
-}
 
 .timeline ul li div::before {
   content: '';
@@ -408,7 +405,7 @@ figure.effect-sadie:hover figcaption::before,figure.effect-sadie:hover p{
   width: 200px;
   position: absolute;
   bottom: -70px;
-  left: 700px;
+  left: -100px;
   background-image: url('../img/fond.jpg');
   background-position: center;
   z-index: 10;
@@ -428,7 +425,7 @@ figure.effect-sadie:hover figcaption::before,figure.effect-sadie:hover p{
 
 @media screen and (min-width: 1000px) and (max-width: 1500px) {
   .cadrephoto{
-    left: 450px;
+    left: 50%;
   }
 }
 .grade{
@@ -444,4 +441,16 @@ figure.effect-sadie:hover figcaption::before,figure.effect-sadie:hover p{
 }
 .junior{
   margin-top: 0
+}
+
+blockquote {
+  margin-top: 20px;
+  font-size: 30px;
+  font-family: 'Raleway', cursive;
+  text-align: center;
+}
+
+.describ{
+  margin-top: 50px;
+  font-size: 18px;
 }
